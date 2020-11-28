@@ -7,7 +7,7 @@ $ docker run nginx
 $ docker run docker.io/nginx/nginx
 ```
 
-* Using image from private registry
+## Using image from private registry
 
 1. Login to private registry before pulling or pushing
 ```console
@@ -19,7 +19,7 @@ $ docker login private-registry.io
 $ docker run private-registry.io/apps/internal-app
 ```
 
-* Deploy Private Registry in your device using docker image "registry"
+## Deploy Private Registry in your device using docker image "registry"
 
 1. Run registry container (Using port 5000 by default)
 ```console
