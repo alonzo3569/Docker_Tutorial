@@ -46,8 +46,8 @@ $ docker history [image ID or image name]
 * The size of the docker image you see from `docker images` is not the actual disk consumption, since images are form by multiple layers
 different images and they might share the same layers. To figure out the disk consumption by docker, run
 ```console
-docker system df
-docker system df -v 
+$ docker system df
+$ docker system df -v 
 #> see SHARED_SIZE, (means they're using same layers)
 ```
 
