@@ -10,7 +10,8 @@ $ vim Dockerfile
 2. Build your image
 ```console
 $ docker build . -t my-simple-webapp 
-#> -t : give your image a name
+#> -t : assign a name for the image
+#> In this case, docker will build a image named my-simple-webapp and tag:lastest (my-simple-webapp:lastest)
 $ docker build . -t [account name]/[application name]
 #> use this if you want to push to dockerhub later
 ```
