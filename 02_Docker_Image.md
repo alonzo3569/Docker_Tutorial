@@ -11,6 +11,7 @@ $ vim Dockerfile
 ```console
 $ docker build . -t my-simple-webapp 
 #> -t : assign a name for the image
+#> -f : if there're many dockerfile in the same folder, use -f to specify which dockerfile should be built
 #> In this case, docker will build a image named my-simple-webapp and tag:lastest (my-simple-webapp:lastest)
 $ docker build . -t [account name]/[application name]
 #> use this if you want to push to dockerhub later
