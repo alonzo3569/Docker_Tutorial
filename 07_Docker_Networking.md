@@ -1,11 +1,4 @@
-## Docker Networking
-
-
-* Identify the number of networks that exist on this system :
-```console
-$ docker network ls
-```
-## Default network in docker
+## Default Network in Docker
 
 <div align=center>
 
@@ -18,6 +11,12 @@ $ docker network ls
 * __None :__ Container is not attach to any network. Can't access from any network. It's isolated.
 * __Host :__ Container can be accessed without port mapping. However, the host port will be occupied.
 
+## Network Command
+
+* __Identify the number of networks that exist on this system :__
+```console
+$ docker network ls
+```
 * __Select a network type for container :__
 ```console
 $ docker run --name alpine-2 --network=none alpine
