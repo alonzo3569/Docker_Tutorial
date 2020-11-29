@@ -3,7 +3,7 @@
 
 * Identify the number of networks that exist on this system :
 ```console
-docker network ls
+$ docker network ls
 ```
 ## Default network in docker
 
@@ -14,29 +14,29 @@ docker network ls
 
 </div>
 
-* Bridge : local area network in docker host, each container can communicate with other using internal IP. Map the port to access container from the outsidde world(ex. Browser outside VM).
-* None : Container is not attach to any network. Can't access from any network. It's isolated.
-* Host : Container can be accessed without port mapping. However, the host port will be occupied.
+* __Bridge :__ local area network in docker host, each container can communicate with other using internal IP. Map the port to access container from the outsidde world(ex. Browser outside VM).
+* __None :__ Container is not attach to any network. Can't access from any network. It's isolated.
+* __Host :__ Container can be accessed without port mapping. However, the host port will be occupied.
 
-* Select a network type for container
+* __Select a network type for container :__
 ```console
-docker run --name alpine-2 --network=none alpine
+$ docker run --name alpine-2 --network=none alpine
 #> --network : none, host, bridge
 ```
 
-* Network information:
+* __Network information :__
 ```console
-docker inspect [network ID or name]
+$ docker inspect [network ID or name]
 ```
 
-* Create a new network
+* __Create a new network :__
 ```console
 $ docker network create --driver bridge --subnet 182.18.0.1/24 --gateway 182.18.0.1 wp-mysql-network
 ```
 
-* Attach container to existing network
+* __Attach container to existing network :__
 ```console
-docker run --name mysql-db -e MYSQL_ROOT_PASSWORD=db_pass123 --network wp-mysql-network mysql:5.6
+$ docker run --name mysql-db -e MYSQL_ROOT_PASSWORD=db_pass123 --network wp-mysql-network mysql:5.6
 ```
 
 Deploy a web application named webapp, using image kodekloud/simple-webapp-mysql. 
