@@ -9,7 +9,8 @@ docker network ls
 
 <div align=center>
 
-![image](https://github.com/alonzo3569/Docker_tutorial/blob/master/Img/Docker_Default_Network.JPG)
+![image](https://github.com/alonzo3569/Docker_tutorial/blob/main/Img/Docker_Default_Network.JPG)
+
 
 </div>
 
