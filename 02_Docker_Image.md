@@ -81,3 +81,12 @@ CMD ["5"]
 #> CMD will be appended after ENTRYPOINT
 
 $ docker run --entrypoint sleep2.0 ubuntu-sleeper 10
+
+## Save current container as image
+* Run `docker commit`
+```console
+$ docker commit [container ID] [image tag]
+$ docker commit -m "gazebo + urdf_tutorial" -a "logan" 975e48dbcc98 urdf_tutorial
+#> -m : commit message
+#> -a : author
+```
