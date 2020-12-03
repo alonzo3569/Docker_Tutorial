@@ -90,3 +90,10 @@ $ docker commit -m "gazebo + urdf_tutorial" -a "logan" 975e48dbcc98 urdf_tutoria
 #> -m : commit message
 #> -a : author
 ```
+
+## Checkout image commit history
+* Run `docker history`
+```console
+$ docker history [image name or ID]
+$ docker history urdf_tutorial
+```
