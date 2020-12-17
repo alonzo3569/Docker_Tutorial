@@ -97,3 +97,11 @@ $ docker commit -m "gazebo + urdf_tutorial" -a "logan" 975e48dbcc98 urdf_tutoria
 $ docker history [image name or ID]
 $ docker history urdf_tutorial
 ```
+## Push local image to dockerhub
+1. Login to your account
+2. Tag your image with your dockerhub account before pushing it 
+```console
+$ docker login
+$ docker tag robotx-ipc alonzo3569/robotx-ipc
+$ docker push alonzo3569/robotx-ipc
+```
