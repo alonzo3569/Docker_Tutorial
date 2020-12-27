@@ -8,6 +8,7 @@ $ docker run -it [image]
 #> -t : Show stdout in the docker
 #> --name : Decide the name of the "container"
 #> --entrypoint : Change the entrypoint of the container
+#> --rm : Remove the container after docker stop
 ```
 __Note :__  
 1. The container will shut down automatically once there's no service or app running.
