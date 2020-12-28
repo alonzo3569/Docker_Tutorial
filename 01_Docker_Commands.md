@@ -87,11 +87,16 @@ Volume mapping : import(connect) files into docker
 $ docker run –v [path in your device]:[path in docker] [image]
 Ex. $ docker run –v /opt/datadir:/var/lib/mysql mysql
 
-Container logs : If you use -d (detach mode) to run your web app in the backend, but some how you want to check the stdout of you web app. Use docker logs.
+Container logs : If you use -d (detach mode) to run your web app in the backend, but somehow you want to check the stdout of you web app. Use docker logs.
  
 docker attach will take the container back to foreground
 
 
 * Questions :
-Q : How app.sh beome kodekloud/simple-prompt-docker after dockerized?
-Q : docker run kodekloud/web-app. Is kodekloud/web-app an image or exe file?
+Q : How app.sh beome kodekloud/simple-prompt-docker after dockerized?  
+Q : docker run kodekloud/web-app. Is kodekloud/web-app an image or exe file?  
+
+## Monitor container status
+```console
+$ docker stats [container ID]
+```
