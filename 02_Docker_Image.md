@@ -58,12 +58,12 @@ Overwrite by docker run command
 $ docker run ubuntu-sleeper sleep 10  
 
 It will be better if we can just input 10.  
-For example : `$ docker rum ubuntu-sleeper 10`
+For example : `$ docker run ubuntu-sleeper 10`  
 Solution : Entrypoint  
 ```console
 ENTRYPOINT["sleep"]  
 
-$ docker rum ubuntu-sleeper 10  
+$ docker run ubuntu-sleeper 10  
 ```
 In case of the CMD, the cmd and params passed in will get replace.  
 Whereas in case of ENTRYPOINT, the cmd params will get appended.  
