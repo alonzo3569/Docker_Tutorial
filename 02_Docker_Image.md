@@ -17,6 +17,9 @@ $ docker build . -t [account name]/[application name]
 #> use this if you want to push to dockerhub later
 ```
 
+**Note :** Meaning of "." in docker build <br>
+"." 不代表build該目錄底下的Dockerfile, 而是代表將目前路徑下的所有資料夾帶到docker build的環境中, 所以若和Dockerfile位置不同, 請加入-f宣告Dockerfile位置
+
 3. Run your image
 ```console
 $ docker run my-simple-webapp
